@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maintenance</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Maintenance</h1>
+  <nav>
+    <a href="chart.html">Chart</a>
+    <a href="admin-dashboard.html">Dashboard</a>
+  </nav>
+  <h2>Add Book</h2>
+  <form id="addBookForm">
+    <input type="text" id="bookTitle" placeholder="Book Title" required>
+    <input type="text" id="bookAuthor" placeholder="Author" required>
+    <select id="bookType">
+      <option value="book" selected>Book</option>
+      <option value="movie">Movie</option>
+    </select>
+    <button type="submit">Add Book</button>
+  </form>
+  <p id="errorMsg" class="error-message"></p>
+  <script src="script.js"></script>
+</body>
+</html>
